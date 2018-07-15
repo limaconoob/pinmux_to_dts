@@ -1,0 +1,17 @@
+from sys import argv
+from os.path import exists
+
+script, from_file = argv
+
+print from_file
+
+if from_file.endswith(".template") and exists(from_file):
+	in_file = open(from_file)
+	indata = in_file.read()
+	out_file = open("./file.html", 'w')
+	out_file.write(indata)
+
+	print "Alright, all done."
+
+	out_file.close()
+	in_file.close()
