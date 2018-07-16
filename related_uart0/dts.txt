@@ -1,0 +1,13 @@
+line 65 "pinmux@44e10800" > line 87 :
+
+pinmux_uart0_pins {
+  pinctrl-single,pins = <0x170 0x30 0x174 0x0>;
+  linux,phandle = <0xe>;
+  phandle = <0xe>;
+};   
+
+
+------------------------------------------------------------------
+line 182 "ocp" > line 270 (Serial : uart0 absent)
+
+
